@@ -3,7 +3,7 @@
   exports.set = function(value) {
     history.pushState({}, document.title, "#" + value);
   };
-
+ 
   exports.get = function() {
     return window.location.hash.substring(1);
   };
